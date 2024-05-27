@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Makabaka, the CEO of Brawl Stars</title>
+    <link rel="icon" type="image/png" href="https://static-00.iconduck.com/assets.00/pig-nose-emoji-512x332-zdrnnk26.png">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: #f0f0f0;
+        text-align: center;
+      }
+      .top-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .box, .side-box {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        text-align: center;
+        cursor: pointer;
+      }
+      .box:hover, .side-box:hover {
+        transform: scale(1.05);
+        background: rgba(0, 0, 0, 0.9);
+      }
+      .box a, .side-box a {
+        color: #61dafb;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+      .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 10px;
+      }
+      .container {
+        max-width: 600px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .container:hover {
+        transform: scale(1.05);
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #ff6f61;
+      }
+      h2, h3 {
+        color: #ffcc00;
+      }
+      p, address, cite, q, abbr {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+      a {
+        color: #61dafb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        margin: 20px 0;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-links">
+      <div class="box" id="emailBox">
+        <a href="mailto:makaboybolol@gmail.com">Email Me</a>
+      </div>
+      <div class="box" id="discordBox">
+        <a href="https://discord.com/channels/@me/1229619438031081542" target="_blank">Join Discord</a>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="side-box">
+        <a href="https://makabaka.w3spaces.com/Freemovie/new-file.html"><b>Free movie website!</b></a>
+      </div>
+      <div class="container" id="container">
+        <h1><i>Booga Booga let's go!</i></h1>
+        <p><abbr title="Excitement or dance">Boogie woogie</abbr><b> the god of Brawl Stars!</b> <i>is displayed in the main browser window.</i></p>
+        <h2>Nobody actually got it</h2>
+        <p><b>To contact me, you can see the mail below!</b></p>
+        <address>
+          <p><a href="mailto:makaboybolol@gmail.com">makaboybolol@gmail.com</a></p>
+        </address>
+        <h3>Or you can contact my best friend <del>Mousy</del> <ins>MouseSAMA</ins></h3>
+        <p><cite>kinda sad right?</cite> I literally forgot his gmail. LOL</p>
+        <hr />
+        <p>Just kidding! <q>come on now, join our Discord server :) brothers</q>.</p>
+        <address>
+          <p><a href="https://discord.com/channels/@me/1229619438031081542">discord.gg</a></p>
+        </address>
+        <hr />
+        <p>Haha, you got tricked!<br />bruh!!</p>
+      </div>
+      <div class="side-box">Comming soon!</div>
+    </div>
+
+    <script>
+      document.getElementById('emailBox').addEventListener('click', function(event) {
+        alert('Opening email client to contact: makaboybolol@gmail.com');
+      });
+
+      document.getElementById('container').addEventListener('click', function(event) {
+        if (event.target.tagName === 'A' && event.target.href.startsWith('https://discord.com')) {
+          alert('Opening Discord channel in a new tab...');
+          window.open(event.target.href, '_blank');
+        }
+      });
+    </script>
+  </body>
+</html>
